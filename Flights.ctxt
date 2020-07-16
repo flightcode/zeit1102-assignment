@@ -1,8 +1,11 @@
 #BlueJ class context
 comment0.target=Flights
-comment0.text=\n\ @Elliot\ Parker\n\ @2020-07-16\n
 comment1.params=
 comment1.target=void\ Init()
 comment2.params=
 comment2.target=void\ View()
-numComments=3
+comment3.params=
+comment3.target=void\ Add()
+comment4.params=
+comment4.target=void\ Delete()
+numComments=5
