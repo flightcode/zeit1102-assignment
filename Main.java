@@ -32,7 +32,6 @@ public class Main
         System.out.println("---");
         String menuOption = scan.nextLine();
         System.out.println("---");
-
         switch(Integer.parseInt("0" + menuOption))
         {
             case 1:
@@ -52,6 +51,6 @@ public class Main
             default:
                 Menu();
                 break;
-            }
+        }
     }
 }
