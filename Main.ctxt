@@ -2,10 +2,8 @@
 comment0.target=Main
 comment1.params=
 comment1.target=void\ Main()
-comment2.params=output
-comment2.target=void\ Output(java.lang.String)
+comment2.params=
+comment2.target=void\ Init()
 comment3.params=
-comment3.target=void\ Init()
-comment4.params=
-comment4.target=void\ Menu()
-numComments=5
+comment3.target=void\ Menu()
+numComments=4
