@@ -17,6 +17,11 @@ public class Main
         Menu();
     }
     
+    void Output(String output)
+    {
+        System.out.println(output);
+    }
+    
     void Init()
     {
         //Any reading/etc
@@ -24,14 +29,14 @@ public class Main
     
     void Menu() 
     {
-        System.out.println("Select Option:");
-        System.out.println("1. View Flights");
-        System.out.println("2. Add Flight");
-        System.out.println("3. Delete Flight");
-        System.out.println("4. Quit");
-        System.out.println("---");
+        Output("Select Option:");
+        Output("1. View Flights");
+        Output("2. Add Flight");
+        Output("3. Delete Flight");
+        Output("4. Quit");
+        Output("---");
         String menuOption = scan.nextLine();
-        System.out.println("---");
+        Output("---");
         switch(Integer.parseInt("0" + menuOption))
         {
             case 1:
