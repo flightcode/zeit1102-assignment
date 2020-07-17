@@ -5,21 +5,19 @@
 
 public class Flights
 {   
-    Main main = new Main();
-    
     public void View()
     {
-        main.Output("Viewing (Not Complete) Flights");
-        main.Output("---");
+        System.out.println("Viewing (Not Complete) Flights");
+        System.out.println("---");
     }
     public void Add()
     {
-        main.Output("Adding (Not Complete) Flight");
-        main.Output("---");
+        System.out.println("Adding (Not Complete) Flight");
+        System.out.println("---");
     }
     public void Delete()
     {
-        main.Output("Deleting (Not Complete) Flight");
-        main.Output("---");
+        System.out.println("Deleting (Not Complete) Flight");
+        System.out.println("---");
     }
 }
