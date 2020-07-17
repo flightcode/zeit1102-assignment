@@ -1,53 +1,23 @@
 /**
  * @Elliot Parker
- * @2020-07-16
+ * @2020-07-17
  */
 
-import java.util.Scanner;
-
 public class Flights
-{
-    Scanner scanner = new Scanner(System.in);
-    
-    public void Init()
+{   
+    public void View()
     {
-        System.out.println("Select Option:");
-        System.out.println("1. View Flights");
-        System.out.println("2. Add Flight");
-        System.out.println("3. Delete Flight");
+        System.out.println("Viewing (Not Complete) Flights");
         System.out.println("---");
-        String initOption = scanner.nextLine();
-        System.out.println("---");
-        
-        switch(Integer.parseInt(initOption))
-        {
-            case 1:
-                View();
-                break;
-            case 2:
-                Add();
-                break;
-            case 3:
-                Delete();
-                break;
-            default:
-                Init();
-                break;
-        }
     }
-    
-    void View()
-    {
-        System.out.println("Viewing Flights");
-    }
-    
-    void Add()
+    public void Add()
     {
         System.out.println("Adding (Not Complete) Flight");
+        System.out.println("---");
     }
-    
-    void Delete()
+    public void Delete()
     {
         System.out.println("Deleting (Not Complete) Flight");
+        System.out.println("---");
     }
 }
