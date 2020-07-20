@@ -1,3 +1,4 @@
+
 /**
  * @Elliot Parker
  * @2020-07-17
@@ -5,25 +6,21 @@
 
 import java.util.Scanner;
 
-public class Main
-{
+public class Main {
     Flights flts = new Flights();
-    
+
     Scanner scan = new Scanner(System.in);
-    
-    public void Main()
-    {
-        Init();
-        Menu();
+
+    public static void main(String[] args) {
+        new Main().Init();
+        new Main().Menu();
     }
-    
-    void Init()
-    {
-        //Any reading/etc
+
+    void Init() {
+        // Any reading/etc
     }
-    
-    void Menu() 
-    {
+
+    void Menu() {
         System.out.println("Select Option:");
         System.out.println("1. View Flights");
         System.out.println("2. Add Flight");
@@ -32,8 +29,7 @@ public class Main
         System.out.println("---");
         String menuOption = scan.nextLine();
         System.out.println("---");
-        switch(Integer.parseInt("0" + menuOption))
-        {
+        switch (Integer.parseInt("0" + menuOption)) {
             case 1:
                 flts.View();
                 Menu();
