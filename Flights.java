@@ -17,6 +17,7 @@ public class Flights {
         System.out.println("Viewing Flights");
         System.out.println("---");
         for (int i = 0; i < flights.size(); i++) {
+            System.out.println("                   ID: " + i);
             System.out.println("            Departure: " + flights.get(i).dep);
             System.out.println("              Arrival: " + flights.get(i).arr);
             System.out.println("              Airline: " + flights.get(i).airline);
@@ -48,7 +49,10 @@ public class Flights {
     }
 
     public void Delete() {
-        System.out.println("Deleting (Not Complete) Flight");
+        System.out.print("Input ID to Delete: ");
+        int id = scan.nextInt();
+        flights.remove(id);
+        System.out.println("Deleted Flight");
         System.out.println("---");
     }
 }
