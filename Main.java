@@ -7,7 +7,7 @@
 import java.util.Scanner;
 
 public class Main {
-    Flights flts = new Flights();
+    Flights Flights = new Flights();
 
     Scanner scan = new Scanner(System.in);
 
@@ -31,15 +31,15 @@ public class Main {
         System.out.println("---");
         switch (Integer.parseInt("0" + menuOption)) {
             case 1:
-                flts.View();
+                Flights.View();
                 Menu();
                 break;
             case 2:
-                flts.Add();
+                Flights.Add();
                 Menu();
                 break;
             case 3:
-                flts.Delete();
+                Flights.Delete();
                 Menu();
                 break;
             case 4:
