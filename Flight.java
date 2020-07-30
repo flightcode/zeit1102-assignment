@@ -1,3 +1,7 @@
+/**
+ * @Elliot Parker @2020-07-30
+ */
+
 public class Flight {
 
     String dep;
