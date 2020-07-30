@@ -8,10 +8,19 @@ import java.util.*;
 
 public class Flights {
     Flight Flight = new Flight();
+    Files Files = new Files();
 
     Scanner scan = new Scanner(System.in);
 
     ArrayList<Flight> flights = new ArrayList<Flight>();
+
+    public void Init() {
+        try {
+            flights = Files.Read("flights.txt");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
     public void View() {
         System.out.println("Viewing Flights");
