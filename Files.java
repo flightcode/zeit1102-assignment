@@ -21,11 +21,11 @@ public class Files {
 
     public void Write(ArrayList<Flight> flights, String outputFile) throws Exception {
         File file = new File(outputFile); // Declare save file
-        file.createNewFile(); // Try creating file to write to
+        file.createNewFile(); // Try creating/clearing file to write to
 
         BufferedWriter output = new BufferedWriter(new FileWriter(outputFile)); // Declare file writer
         for (int i = 0; i < flights.size(); i++) { // Iterate through all flights in array
-            output.write(Flight.toString(flights.get(i))); // Write flight to file, delimited by ", "
+            output.write(flights.get(i).toString()); // Write flight to file, delimited by ", "
             output.newLine(); // Go to next line
         }
         output.close();
