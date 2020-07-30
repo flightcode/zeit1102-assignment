@@ -12,12 +12,8 @@ public class Main {
     Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        new Main().Init();
+        new Flights().Init();
         new Main().Menu();
-    }
-
-    void Init() {
-        // Any reading/etc
     }
 
     void Menu() {
