@@ -20,12 +20,14 @@ public class Files {
     }
 
     public void Write(ArrayList<Flight> flights, String outputFile) throws Exception {
-        BufferedWriter output = new BufferedWriter(new FileWriter(outputFile)); // Declare save file
-        output.createNewFile(); // Try creating file to write to
+        File file = new File(outputFile); // Declare save file
+        file.createNewFile(); // Try creating file to write to
+
+        BufferedWriter output = new BufferedWriter(new FileWriter(outputFile)); // Declare file writer
         for (int i = 0; i < flights.size(); i++) { // Iterate through all flights in array
-            file.write(Arrays.toString(flights.get(i))); // Write flight to file, delimited by ", "
-            file.newLine(); // Go to next line
+            output.write(Flight.toString(flights.get(i))); // Write flight to file, delimited by ", "
+            output.newLine(); // Go to next line
         }
-        file.close();
+        output.close();
     }
 }
