@@ -12,7 +12,7 @@ public class Flights {
 
     Scanner scan = new Scanner(System.in);
 
-    ArrayList<Flight> flights = new ArrayList<Flight>();
+    static ArrayList<Flight> flights = new ArrayList<Flight>();
 
     public void Init() {
         try {
@@ -52,6 +52,11 @@ public class Flights {
         System.out.print("Aircraft Registration: ");
         newFlt.acftReg = scan.nextLine();
         flights.add(newFlt);
+        try {
+            Files.Write(flights, "flights.txt");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         System.out.println("---");
         System.out.println("Added Flight");
         System.out.println("---");
