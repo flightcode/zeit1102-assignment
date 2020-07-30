@@ -12,8 +12,8 @@ public class Files {
         }
         Scanner scan = new Scanner(input); // Scan file
         while (scan.hasNextLine()) { // Scan each line of file
-            Flight newFlt = new Flight(scan.nextLine().split(","));
-            arr.add(newFlt); // Add integer to array
+            Flight newFlt = new Flight(scan.nextLine().split(",")); // Split line by "," and generate flight
+            arr.add(newFlt); // Add flight to array
         }
         scan.close();
         return arr; // Return Array List
