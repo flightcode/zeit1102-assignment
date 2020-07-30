@@ -32,9 +32,8 @@ public class Flight {
         this.acftReg = arr[5];
     }
 
-    public String toString(Flight flight) {
-        String str = this.dep + ", " + this.arr + ", " + this.airline + ", " + this.fltNum + ", " + this.acftType + ", "
+    public String toString() {
+        return this.dep + ", " + this.arr + ", " + this.airline + ", " + this.fltNum + ", " + this.acftType + ", "
                 + this.acftReg;
-        return str;
     }
 }
