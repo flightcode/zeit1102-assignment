@@ -7,9 +7,9 @@
 import java.util.Scanner;
 
 public class Main {
-    Flights Flights = new Flights();
+    private Flights Flights = new Flights();
 
-    Scanner scan = new Scanner(System.in);
+    private Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
         new Flights().Init();

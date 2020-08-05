@@ -7,12 +7,12 @@
 import java.util.*;
 
 public class Flights {
-    Flight Flight = new Flight();
-    Files Files = new Files();
+    private Flight Flight = new Flight();
+    private Files Files = new Files();
 
-    Scanner scan = new Scanner(System.in);
+    private Scanner scan = new Scanner(System.in);
 
-    static ArrayList<Flight> flights = new ArrayList<Flight>();
+    private static ArrayList<Flight> flights = new ArrayList<Flight>();
 
     public void Init() {
         try {

@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 public class Files {
-    Flight Flight = new Flight();
+    private Flight Flight = new Flight();
 
     public ArrayList<Flight> Read(String inputFile) throws Exception {
         ArrayList<Flight> arr = new ArrayList<Flight>();
