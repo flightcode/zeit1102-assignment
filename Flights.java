@@ -27,30 +27,30 @@ public class Flights {
         System.out.println("---");
         for (int i = 0; i < flights.size(); i++) {
             System.out.println("                   ID: " + i);
-            System.out.println("            Departure: " + flights.get(i).dep);
-            System.out.println("              Arrival: " + flights.get(i).arr);
-            System.out.println("              Airline: " + flights.get(i).airline);
-            System.out.println("        Flight Number: " + flights.get(i).fltNum);
-            System.out.println("        Aircraft Type: " + flights.get(i).acftType);
-            System.out.println("Aircraft Registration: " + flights.get(i).acftReg);
+            System.out.println("            Departure: " + flights.get(i).getDep());
+            System.out.println("              Arrival: " + flights.get(i).getArr());
+            System.out.println("              Airline: " + flights.get(i).getAirline());
+            System.out.println("        Flight Number: " + flights.get(i).getFltNum());
+            System.out.println("        Aircraft Type: " + flights.get(i).getAcftType());
+            System.out.println("Aircraft Registration: " + flights.get(i).getAcftReg());
             System.out.println("---");
         }
     }
 
     public void Add() {
-        Flight newFlt = new Flight();
         System.out.print("            Departure: ");
-        newFlt.dep = scan.nextLine();
+        String dep = scan.nextLine();
         System.out.print("              Arrival: ");
-        newFlt.arr = scan.nextLine();
+        String arr = scan.nextLine();
         System.out.print("              Airline: ");
-        newFlt.airline = scan.nextLine();
+        String airline = scan.nextLine();
         System.out.print("        Flight Number: ");
-        newFlt.fltNum = scan.nextLine();
+        String fltNum = scan.nextLine();
         System.out.print("        Aircraft Type: ");
-        newFlt.acftType = scan.nextLine();
+        String acftType = scan.nextLine();
         System.out.print("Aircraft Registration: ");
-        newFlt.acftReg = scan.nextLine();
+        String acftReg = scan.nextLine();
+        Flight newFlt = new Flight(dep, arr, airline, fltNum, acftType, acftReg);
         flights.add(newFlt);
         try {
             Files.Write(flights, "flights.txt");
