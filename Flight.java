@@ -36,4 +36,28 @@ public class Flight {
         return this.dep + ", " + this.arr + ", " + this.airline + ", " + this.fltNum + ", " + this.acftType + ", "
                 + this.acftReg;
     }
+
+    public String getDep() {
+        return this.dep;
+    }
+
+    public String getArr() {
+        return this.arr;
+    }
+
+    public String getAirline() {
+        return this.airline;
+    }
+
+    public String getFltNum() {
+        return this.fltNum;
+    }
+
+    public String getAcftType() {
+        return this.acftType;
+    }
+
+    public String getAcftReg() {
+        return this.acftReg;
+    }
 }
