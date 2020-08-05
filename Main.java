@@ -31,7 +31,11 @@ public class Main {
                 Menu();
                 break;
             case 2:
-                Flights.Add();
+                try {
+                    Flights.Add();
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
                 Menu();
                 break;
             case 3:

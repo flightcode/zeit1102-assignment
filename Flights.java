@@ -39,11 +39,17 @@ public class Flights {
         }
     }
 
-    public void Add() {
+    public void Add() throws Exception {
         System.out.print("            Departure: ");
         String dep = scan.nextLine();
+        if (dep.length() != 4) {
+            throw new Exception("Enter valid 4 character ICAO code");
+        }
         System.out.print("              Arrival: ");
         String arr = scan.nextLine();
+        if (arr.length() != 4) {
+            throw new Exception("Enter valid 4 character ICAO code");
+        }
         System.out.print("              Airline: ");
         String airline = scan.nextLine();
         System.out.print("        Flight Number: ");
