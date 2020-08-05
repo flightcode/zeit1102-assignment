@@ -5,6 +5,7 @@
  */
 
 import java.util.*;
+import java.text.NumberFormat;
 
 public class Flights {
     private Flight Flight = new Flight();
@@ -25,8 +26,9 @@ public class Flights {
     public void View() {
         System.out.println("Viewing Flights");
         System.out.println("---");
+        NumberFormat numberFormat = NumberFormat.getInstance();
         for (int i = 0; i < flights.size(); i++) {
-            System.out.println("                   ID: " + i);
+            System.out.println("                   ID: " + numberFormat.format(i));
             System.out.println("            Departure: " + flights.get(i).getDep());
             System.out.println("              Arrival: " + flights.get(i).getArr());
             System.out.println("              Airline: " + flights.get(i).getAirline());
