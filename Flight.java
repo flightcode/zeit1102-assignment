@@ -2,7 +2,8 @@
  * @Elliot Parker @2020-07-30
  */
 
-public class Flight {
+public class Flight { // Class that is intended to be created as an object. Stores data about singular
+                      // flight.
 
     private String dep;
     private String arr;
@@ -32,7 +33,7 @@ public class Flight {
         this.acftReg = arr[5];
     }
 
-    public String toString() {
+    public String toString() { // Convert object data to string
         return this.dep + ", " + this.arr + ", " + this.airline + ", " + this.fltNum + ", " + this.acftType + ", "
                 + this.acftReg;
     }
