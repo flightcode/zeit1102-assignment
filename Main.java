@@ -36,6 +36,7 @@ public class Main { // Main function, runs any init methods, and handles the men
                     Flights.Add();
                 } catch (Exception e) {
                     System.out.println(e);
+                    System.out.println("---");
                 }
                 Menu();
                 break;

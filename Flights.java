@@ -44,12 +44,12 @@ public class Flights { // Holds all functions for the flights system (This was c
         System.out.print("            Departure: "); // Get user inputs
         String dep = scan.nextLine();
         if (dep.length() != 4) { // Check ICAO code validity
-            throw new Exception("Enter valid 4 character ICAO code");
+            throw new BadICAOException("Enter valid 4 character ICAO code");
         }
         System.out.print("              Arrival: ");
         String arr = scan.nextLine();
         if (arr.length() != 4) { // Check ICAO code validity
-            throw new Exception("Enter valid 4 character ICAO code");
+            throw new BadICAOException("Enter valid 4 character ICAO code");
         }
         System.out.print("              Airline: ");
         String airline = scan.nextLine();
