@@ -9,7 +9,6 @@ import java.text.NumberFormat;
 
 public class Flights { // Holds all functions for the flights system (This was created separate with
                        // the intent for futureproofing the system, if other features were added)
-    private Flight Flight = new Flight();
     private Files Files = new Files();
 
     private Scanner scan = new Scanner(System.in);

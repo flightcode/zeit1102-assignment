@@ -2,8 +2,6 @@ import java.io.*;
 import java.util.*;
 
 public class Files { // Manages save file read/write.
-    private Flight Flight = new Flight();
-
     public ArrayList<Flight> Read(String inputFile) throws Exception { // Read save file and output array of flights.
         ArrayList<Flight> arr = new ArrayList<Flight>();
         File input = new File(inputFile); // Declare save file
