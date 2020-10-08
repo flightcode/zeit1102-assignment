@@ -74,6 +74,12 @@ public class Flights { // Holds all functions for the flights system (This was c
         System.out.print("Input ID to Delete: ");
         int id = scan.nextInt();
         flights.remove(id);
+        try { // Write new flight to file
+            Files.Write(flights, "flights.txt");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("---");
         System.out.println("Deleted Flight");
         System.out.println("---");
     }
